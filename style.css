@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'PT Sans', sans-serif;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #000;
+}
+h1{
+   font-size: 60px;
+   font-weight: 900;
+   background: repeating-linear-gradient(-45deg, #ED3A3A 0%, #EDD93A 7.2%, #5CED3A 15.5%, #3AECED 21.9%, #3A40ED 35.4%, #AF3AED 42.2%, #ED3A6C 47.9%, #EC1818 50%);
+   background-size: 600vw 600vw;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   animation:  slide 10s linear infinite forwards;
+}
+
+@keyframes slide{
+   0%{
+      background-position-x: 0%;
+   }
+   100%{
+      background-position-x: 600vw;
+   }
+}
+
+@media(min-width: 523px){
+   h1{
+      font-size: 100px;
+   }
+}
